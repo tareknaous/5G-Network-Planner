@@ -133,7 +133,6 @@ for k=1:1:AddedUsers
   Pr = EIRP - PL - 0.016*z - 0.0035*z + Gr;
   Power_Received = [Power_Received;Pr];
 end   
-
 end
 
 %Calculate the Number of Served and Unserved Mobile Stations
@@ -142,7 +141,8 @@ disp(Served)
 Unserved = ['The number of unserved MSs is: ', num2str(sum(Initial_MS_Status(:) == 0))];
 disp(Unserved)
 
+%Plot Title
 title('Mobile Stations & Base Stations')
 
-%Compute Efficiency Percentage
+%Compute the Efficiency
 disp(sum(Initial_MS_Status(:) == 1)/NumberOfUsers *100)
