@@ -1,4 +1,4 @@
-% Open the Los Angeles geographical area map and plot it using OpenStreetMap functions
+% Open the Austin area geographical area map and plot it using OpenStreetMap functions
 openstreetmap_filename = 'austin.osm';
 map_img_filename = 'map.png';
 [parsed_osm, osm_xml] = parse_openstreetmap(openstreetmap_filename);
